@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'TT-interphase-pro';
+    src: url('Fonts/TT\ Interphases\ Pro\ Trial\ Bold.ttf');
+}
+
+@font-face {
+    font-family: 'TT-interphase-regular';
+    src: url('Fonts/TT\ Interphases\ Pro\ Trial\ Regular.ttf');
+}
+
+@font-face {
+    font-family: 'gaglin';
+    src: url('Fonts/Gagalin-Regular.otf');
+}
+.Mission {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'TT-interphase-regular';
+}
+.Goals{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'TT-interphase-regular';
+}
+.Mission h1{
+    position: relative;
+}
+p{
+    font-family: 'TT-interphase-regular';
+    font-weight: 300;
+}
+.Mission h1::after {
+    content: '';
+    position: absolute;
+    transform: translate(-100%,-0%);
+    bottom: -10px;
+    height: 3px;
+    width: 265px;
+    background-color: #cb3467;
+}
+.Goals h1{
+    position: relative;
+    font-weight: 900;
+}
+.Goals h1::after {
+    content: '';
+    position: absolute;
+    transform: translate(-100%,-0%);
+    bottom: -10px;
+    height: 3px;
+    width: 140px;
+    background-color: #cb3467;
+}
+.blocks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin-top: 30px;
+    width: 300px;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.box .ImageBlock{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+}
+.box .ImageInfo {
+    margin-top: 10px;
+    width: 100%;
+}
+.box .ImageInfo p{
+    font-size: medium;
+}
+.box .ImageInfo1 h2{
+    font-size: 1.5em;
+}
+.box .ImageInfo1 {
+    margin-top: 30px;
+}
+.box .ImageInfo1 p{
+    margin-top: 50px;
+    font-size: medium;
+}
+.ImageInfo p{
+    margin-top: 10px;
+}

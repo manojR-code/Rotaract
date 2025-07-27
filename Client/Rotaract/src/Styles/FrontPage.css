@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'TT-interphase-pro';
+  src: url('Fonts/TT\ Interphases\ Pro\ Trial\ Bold.ttf');
+}
+
+@font-face {
+  font-family: 'TT-interphase-regular';
+  src: url('Fonts/TT\ Interphases\ Pro\ Trial\ Regular.ttf');
+}
+
+@font-face {
+  font-family: 'gaglin';
+  src: url('Fonts/Gagalin-Regular.otf');
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.Head {
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'TT-interphase-pro';
+}
+
+.InnerSideSection {
+  display: flex;
+  align-items: center;
+}
+
+.Lists ul li {
+  list-style: none;
+}
+
+.Lists {
+  display: flex;
+  align-items: center;
+
+}
+
+.Lists ul {
+  display: flex;
+  margin: 0 10px;
+  justify-content: space-around;
+}
+
+.Lists ul li {
+  font-size: large;
+  margin: 0 20px;
+}
+
+.LogoSide h2 {
+  font-family: 'TT-interphase-regular';
+  font-weight: 200;
+}
+
+.HeadLine {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.HeadLine>h4 {
+  font-size: 1.4em;
+  color: #2c1e4a;
+  font-family: 'gaglin','TT-interphase-regular';
+}
+
+.HeadLine h1 {
+  font-family: 'gaglin','TT-interphase-regular';
+  font-size: 6em;
+  color: #2c1e4a;
+}
+
+.VideoPlayer {
+  margin-top: 20px;
+}
+
+.innerInfo {
+  color: white;
+  font-family: 'TT-interphase-regular';
+}
+
+.innerInfo h1 {
+  font-size: 4em;
+}
+
+/*HamBurger*/
+/* Hamburger icon */
+.HamburgerMenu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.bar {
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Navigation list */
+.Lists {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Lists ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.Lists li {
+  color: black;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .HamburgerMenu {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .Lists {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  .Lists.show {
+    display: flex;
+  }
+
+  .Lists ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width:550px) {
+  .HeadLine h1 {
+    font-family: 'gaglin';
+    font-size: 4em;
+  }
+
+  .innerInfo h1 {
+    font-size: 2.8em;
+  }
+}

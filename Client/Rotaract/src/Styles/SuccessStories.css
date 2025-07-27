@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'TT-interphase-regular';
+    src: url('Fonts/TT\ Interphases\ Pro\ Trial\ Regular.ttf');
+}
+.success-wrapper {
+  margin-top: 30px;
+  padding: 40px 20px;
+  font-family: 'TT-interphase-regular';
+}
+
+.success-headings {
+  margin-bottom: 30px;
+}
+
+.main-title {
+  font-size: 2.5em;
+  color: #2c1e4a;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.main-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  background-color: #cb3467;
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 2em;
+  color: #4a3762;
+     margin-top: 30px;
+}
+
+.success-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.success-info {
+  flex: 1;
+  min-width: 280px;
+  color: #333;
+}
+
+.success-info h3 {
+  margin-bottom: 10px;
+  color: #2c1e4a;
+}
+
+.success-info p {
+  line-height: 2;
+  margin-bottom: 12px;
+  font-family: 'TT-interphase-regular';
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.success-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.success-image img {
+  width: 100%;
+  min-height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.success-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+  justify-content: space-evenly;   
+  align-items: flex-start;
+}
+.BloodDonationCamp {
+    margin-bottom: 20px;
+    position: relative;
+}
+.gallery-img {
+  flex: 1 1 45%;
+  width: 100%;
+  max-width: 500px;      
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.BloodDonationCamp h1::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width:250px;
+  height: 4px;
+  background-color: #cb3467;
+  border-radius: 2px;
+}
+.blood-drive-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.blood-drive-info {
+  flex: 1;
+  min-width: 300px;
+  color: #2c1e4a;
+}
+
+.blood-drive-info h3 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 800;
+  
+}
+
+.blood-drive-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.blood-drive-image img {
+  width: 100%;
+  max-width: 400px; 
+  height: 400px;     
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.school-activity-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.school-activity-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.school-activity-image img {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.school-activity-info {
+  flex: 1;
+  min-width: 300px;
+  color: #2c1e4a;
+}
+
+.school-activity-info .section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #1c1433;
+  position: relative;
+  display: inline-block;
+}
+
+.school-activity-info .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  background-color: #cb3467;
+  border-radius: 2px;
+}
+
+.school-activity-info h3 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .school-activity-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .school-activity-image img {
+    height: auto;
+  }
+
+  .school-activity-info .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blood-drive-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .blood-drive-image img {
+    height: auto; 
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-img {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .success-container {
+    flex-direction: column;
+  }
+
+  .main-title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 2em;
+    margin-top: 30px;
+  }
+  .success-info p{
+    line-height: 2;
+  margin-bottom: 12px;
+  font-family: 'TT-interphase-regular';
+  font-size: 1em;
+  font-weight: 800;
+  }
+}
