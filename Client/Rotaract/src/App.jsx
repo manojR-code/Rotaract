@@ -5,7 +5,6 @@ import MissionGoal from './Pages/MissionGoal';
 import SuccessStories from './Pages/SuccessStories';
 import ScrollTriggered from './Pages/GetToKnow';
 import Member from './Pages/Member';
-import WhatsNew from './Pages/WhatsNew';
 import ContactUs from './Pages/ContactUs';
 import AdminLogin from './Pages/LoginPage';
 import AdminDashboard from './Pages/AdminDashBoard';
@@ -16,7 +15,6 @@ function MainPageSections() {
       <MissionGoal />
       <SuccessStories />
       <ScrollTriggered />
-      <WhatsNew />
       <Member />
       <ContactUs />
     </>

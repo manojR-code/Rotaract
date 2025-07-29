@@ -5,7 +5,7 @@ const cors = require('cors');
 const MemberList = require('./Routes/User_Create');
 const DB = require('./Config/DataBaseConnection');
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: true,
   methods: ['GET', 'POST']
 }));
 

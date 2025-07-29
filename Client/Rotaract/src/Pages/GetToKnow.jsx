@@ -2,14 +2,32 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import axios from 'axios'
 import '../Styles/GetToKnow.css'
-import teju from '/Images/teju_sanatani-20250725-0001.jpg'
+import { toast, ToastContainer } from 'react-toastify';
+import ImageLogo from '../../public/Images/Rotaract-e1690287173287.png';
+import '../Styles/WhatsNew.css'
 function GetToKnow(props) {
+  const [load, setLoad] = useState(false);
   const [users, setUsers] = useState([]);
+  const [events, setEvents] = useState([]);
+  const [eventload, setEventload] = useState(false);
   useEffect(() => {
     const fetcher = async () => {
       try {
         const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/user/Members`);
         setUsers(res.data.Users || []);
+        setLoad(true);
+      } catch (err) {
+        toast.error('Something Went Wrong');
+      }
+    }
+    fetcher();
+  }, []);
+  useEffect(() => {
+    const fetcher = async () => {
+      try {
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/user/EventsInfo`);
+        setEvents(res.data.Events);
+        setEventload(true);
       } catch (err) {
         toast.error('Something Went Wrong');
       }
@@ -43,7 +61,7 @@ function GetToKnow(props) {
     borderRadius: '10px',
     objectFit: 'contain',
   }
-  console.log(users);
+  console.log(events);
   const fun = (bufferArray) => {
     try {
       const uint8Array = new Uint8Array(bufferArray);
@@ -54,13 +72,34 @@ function GetToKnow(props) {
       return null;
     }
   };
+  const LoadingStyle = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    height: '200px',
+    width: '200px',
+    zIndex: '1'
+  };
   return (
     <>
       <div className="temp">
         <h2>Get To Know Team</h2>
       </div>
+      <ToastContainer />
+      {!load && (
+        <div className='Loading_container1'>
+          <img src={ImageLogo} id='LoadingLogo' alt="Loading..." style={LoadingStyle} />
+        </div>
+      )}
+      {!eventload && (
+        <div className='Loading_container1'>
+          <img src={ImageLogo} id='LoadingLogo' alt="Loading..." style={LoadingStyle} />
+        </div>
+      )}
       <div className="containerimage" style={{ ...containerimagestyle }}>
         {users && users.map((user, index) => (
+          
           <motion.div
             key={user._id || index}
             className="blocks"
@@ -74,15 +113,39 @@ function GetToKnow(props) {
               />
             </div>
             <div className="info">
+              <h1>{user.Name}</h1>
               <h2>{user.Role}</h2>
-              <h3>{user.Name}</h3>
-            </div>
+              </div>   
           </motion.div>
         ))}
 
       </div>
       <div className="btn">
         <h3>Know Our Team</h3>
+      </div>
+      <div className="container">
+        <div className="title">
+          <h1>What's New</h1>
+        </div>
+
+        <div className="UpcommingEvents">
+          {events.length > 0 ? (
+            events.map((event, index) => (
+              <div className="blocks" key={index}>
+                <img
+                  src={`data:image/jpeg;base64,${fun(event.Event_image.data)}`}
+                  alt={event.name}
+                />
+                <div className="event-details">
+                  <h2>{event.Event_Name}</h2>
+                  <p>{event.Event_Description}</p>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="no-events">No upcoming events available</p>
+          )}
+        </div>
       </div>
     </>
   );

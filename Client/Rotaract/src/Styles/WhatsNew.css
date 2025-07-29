@@ -1,42 +1,102 @@
 @font-face {
-    font-family: 'TT-interphase-regular';
-    src: url('Fonts/TT\ Interphases\ Pro\ Trial\ Regular.ttf');
+  font-family: 'TT-interphase-regular';
+  src: url('Fonts/TT Interphases Pro Trial Regular.ttf');
 }
 
 .container {
-    padding: 40px;
-    font-family: 'TT-interphase-regular';
+  padding: 40px;
+  font-family: 'TT-interphase-regular';
 }
 
 .container .title h1 {
-    font-size: 2.5em;
-    color: #2c1e4a;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 10px;
+  font-size: 2.5em;
+  color: #2c1e4a;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .container .title h1::after {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 60%;
-    height: 4px;
-    background-color: #cb3467;
-    border-radius: 2px;
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  background-color: #cb3467;
+  border-radius: 2px;
 }
-.UpcommingEvents{
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+
+.UpcommingEvents {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.UpcommingEvents .blocks {
+  width: 300px;
+  min-height: 350px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.UpcommingEvents .blocks:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.UpcommingEvents .blocks img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.UpcommingEvents .blocks .event-details {
+  padding: 15px;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.UpcommingEvents .blocks .event-details h2 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  color: #2c1e4a;
+}
+
+.UpcommingEvents .blocks .event-details p {
+  font-size: 0.95em;
+  color: #555;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.no-events {
+  font-size: 1.2em;
+  color: #777;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .UpcommingEvents {
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.UpcommingEvents .blocks{
-    width: 300px;
-    height: 300px;
-    background-color: white;
+  }
+
+  .UpcommingEvents .blocks {
+    width: 90%;
+  }
 }

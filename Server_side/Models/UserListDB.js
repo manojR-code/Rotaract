@@ -11,6 +11,10 @@ const MemberList = mongoose.Schema({
     Imgae_Upload: {
         type: 'Buffer',
         required: true
+    },
+    Priority: {
+        type: 'String',
+        require
     }
 });
 module.exports = mongoose.model('MemberList', MemberList);
