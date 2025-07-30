@@ -1,7 +1,10 @@
 @font-face {
-    font-family: 'TT-interphase-regular';
-    src: url('Fonts/TT\ Interphases\ Pro\ Trial\ Regular.ttf');
+  font-family: 'TT-interphase-regular';
+  src: url('/fonts/TT-Interphase-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 .success-wrapper {
   margin-top: 30px;
   padding: 40px 20px;
