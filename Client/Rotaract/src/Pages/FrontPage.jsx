@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ImageLogo from '../../public/Images/Rotaract-e1690287173287.png';
+import ImageLogo from '/Images/Rotaract-e1690287173287.png';
 import '../Styles/FrontPage.css';
-import VideoPlay from '../../public/Videos/2018_156_PowerInOurConnections_Omnibus30_NOVO_1080-v2.mp4';
+import VideoPlay from '/Videos/2018_156_PowerInOurConnections_Omnibus30_NOVO_1080-v2.mp4';
 
 function FrontPage() {
   const [menuOpen, setMenuOpen] = useState(false);
