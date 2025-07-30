@@ -1,10 +1,10 @@
 import React from 'react';
 import '../Styles/SuccessStories.css';
-import SavanaDurgaImage from '../../public/Images/Savanadurga2.jpeg'
-import SavanaDurgaImage1 from '../../public/Images/Savanadurga.jpeg'
-import NewsPaper from '../../public/Images/NewsPaper.jpeg'
-import BloodDonationCamp from '../../public/Images/Blood-Donation-Camp.png';
-import SchoolActivity from '../../public/Images/Government-School-Engagement-Activity.png'
+import SavanaDurgaImage from '/Images/Savanadurga2.jpeg'
+import SavanaDurgaImage1 from '/Images/Savanadurga.jpeg'
+import NewsPaper from '/Images/NewsPaper.jpeg'
+import BloodDonationCamp from '/Images/Blood-Donation-Camp.png';
+import SchoolActivity from '/Images/Government-School-Engagement-Activity.png'
 const SuccessStories = () => {
     return (
         <div className="success-wrapper">
