@@ -10,7 +10,7 @@ function FrontPage() {
     <div>
       <div className="Head">
         <div className="InnerSideSection">
-          <img src={ImageLogo} alt="" width={120} height={120} />
+          <img src='/Images/Rotaract-e1690287173287.png' alt="" width={120} height={120} />
           <div className="LogoSide">
             <h1>Rotaract</h1>
             <h2>Shanthiniketan</h2>
@@ -42,7 +42,7 @@ function FrontPage() {
         style={{ width: '100vw', height: '100vh', position: 'relative', overflow: 'hidden' }}
       >
         <video
-          src={VideoPlay}
+          src='/Videos/2018_156_PowerInOurConnections_Omnibus30_NOVO_1080-v2.mp4'
           autoPlay
           loop
           muted
