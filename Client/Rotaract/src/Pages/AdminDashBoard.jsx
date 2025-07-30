@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/AdminDashBoard.css';
 import axios from 'axios';
-import Logo from '../../public/Images/Rotaract-e1690287173287.png';
+import Logo from '/Images/Rotaract-e1690287173287.png';
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate, useLocation } from 'react-router-dom';
 const AdminDashboard = () => {
