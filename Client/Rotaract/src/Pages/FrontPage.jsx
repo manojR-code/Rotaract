@@ -10,7 +10,7 @@ function FrontPage() {
     <div>
       <div className="Head">
         <div className="InnerSideSection">
-          <img src='/Images/Rotaract-e1690287173287.png' alt="" width={120} height={120} />
+          <img src='/Images/Rotaractlogo.png' alt="" width={120} height={120} />
           <div className="LogoSide">
             <h1>Rotaract</h1>
             <h2>Shanthiniketan</h2>
