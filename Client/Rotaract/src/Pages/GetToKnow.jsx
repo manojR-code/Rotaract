@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import axios from 'axios'
 import '../Styles/GetToKnow.css'
 import { toast, ToastContainer } from 'react-toastify';
-import ImageLogo from '/Images/Rotaract-e1690287173287.png';
+import ImageLogo from '/Images/Rotaractlogo.png';
 import '../Styles/WhatsNew.css'
 function GetToKnow(props) {
   const [load, setLoad] = useState(false);
