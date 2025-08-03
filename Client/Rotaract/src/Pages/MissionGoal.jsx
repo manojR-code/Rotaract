@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import '../Styles/MissionGoal.css';
-import Community from '/icons/community.png';
-import graduation from '/icons/graduation.png';
-import sustainable_travel from '/icons/sustainable-travel.png';
+import Community from '../icons/community.png';
+import graduation from '../icons/graduation.png';
+import sustainable_travel from '../icons/sustainable-travel.png';
 
 const boxVariants = {
   hidden: { opacity: 0, x: -100 },

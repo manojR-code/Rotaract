@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ImageLogo from '/Images/Rotaractlogo.png';
 import '../Styles/FrontPage.css';
-import VideoPlay from '/Videos/2018_156_PowerInOurConnections_Omnibus30_NOVO_1080-v2.mp4';
+import VideoPlay from '../Videos/2018_156_PowerInOurConnections_Omnibus30_NOVO_1080-v2.mp4';
 
 function FrontPage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,7 +42,7 @@ function FrontPage() {
         style={{ width: '100vw', height: '100vh', position: 'relative', overflow: 'hidden' }}
       >
         <video
-          src='/Videos/2018_156_PowerInOurConnections_Omnibus30_NOVO_1080-v2.mp4'
+          src={VideoPlay}
           autoPlay
           loop
           muted

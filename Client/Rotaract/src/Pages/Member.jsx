@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/Member.css';
- import rotaryImg from '/Images/Rotaractlogo.png';
+ import rotaryImg from '../Images/Rotaractlogo.png';
 
 function MemberForm() {
   return (
