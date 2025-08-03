@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ImageLogo from '/Images/Rotaractlogo.png';
+import ImageLogo from '../Images/Rotaractlogo.png';
 import '../Styles/FrontPage.css';
-import VideoPlay from '../Videos/2018_156_PowerInOurConnections_Omnibus30_NOVO_1080-v2.mp4';
+import VideoPlay from '../Videos/2.mp4';
 
 function FrontPage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ function FrontPage() {
     <div>
       <div className="Head">
         <div className="InnerSideSection">
-          <img src='/Images/Rotaractlogo.png' alt="" width={120} height={120} />
+          <img src={ImageLogo} alt="" width={120} height={120} />
           <div className="LogoSide">
             <h1>Rotaract</h1>
             <h2>Shanthiniketan</h2>
