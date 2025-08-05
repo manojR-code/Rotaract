@@ -8,6 +8,7 @@ import Member from './Pages/Member';
 import ContactUs from './Pages/ContactUs';
 import AdminLogin from './Pages/LoginPage';
 import AdminDashboard from './Pages/AdminDashBoard';
+import MemberList from './Pages/MemberList';
 function MainPageSections() {
   return (
     <>
@@ -26,7 +27,8 @@ function App() {
     <Routes>
       <Route path="/" element={<MainPageSections />} />
       <Route path="/adminlogin" element={<AdminLogin />} />
-      <Route path='/AdminDashBoard' element={<AdminDashboard/>}></Route>
+      <Route path='/AdminDashBoard' element={<AdminDashboard />}></Route>
+      <Route path='/MemberList' element={<MemberList/>}></Route>
     </Routes>
   );
 }

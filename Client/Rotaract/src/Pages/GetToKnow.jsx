@@ -4,7 +4,8 @@ import axios from 'axios'
 import '../Styles/GetToKnow.css'
 import { toast, ToastContainer } from 'react-toastify';
 import ImageLogo from '../Images/Rotaractlogo.png';
-import '../Styles/WhatsNew.css'
+import '../Styles/WhatsNew.css';
+
 function GetToKnow(props) {
   const [load, setLoad] = useState(false);
   const [users, setUsers] = useState([]);
@@ -61,7 +62,6 @@ function GetToKnow(props) {
     borderRadius: '10px',
     objectFit: 'contain',
   }
-  console.log(events);
   const fun = (bufferArray) => {
     try {
       const uint8Array = new Uint8Array(bufferArray);
@@ -99,7 +99,7 @@ function GetToKnow(props) {
       )}
       <div className="containerimage" style={{ ...containerimagestyle }}>
         {users && users.map((user, index) => (
-          
+
           <motion.div
             key={user._id || index}
             className="blocks"
@@ -115,7 +115,7 @@ function GetToKnow(props) {
             <div className="info">
               <h1>{user.Name}</h1>
               <h2>{user.Role}</h2>
-              </div>   
+            </div>
           </motion.div>
         ))}
 

@@ -1,0 +1,12 @@
+.blocks:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.images img {
+    transition: transform 0.3s ease;
+}
+
+.blocks:hover .images img {
+    transform: scale(1.05);
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ImageLogo from '../Images/Rotaractlogo.png';
 import '../Styles/FrontPage.css';
 import VideoPlay from '../Videos/2.mp4';
-
+import {Link } from 'react-router-dom';
 function FrontPage() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,7 +24,7 @@ function FrontPage() {
 
         <div className={`Lists ${menuOpen ? 'show' : ''}`}>
           <ul>
-            <li>About Us</li>
+            <li><Link id='links' style={{textDecoration:'none',color:'black'}} to={'/MemberList'}>Members</Link></li>
             <li>Our Works</li>
           </ul>
         </div>

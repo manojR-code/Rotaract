@@ -39,6 +39,10 @@ body {
 .Lists ul li {
   list-style: none;
 }
+#Links{
+  list-style: none;
+  text-decoration: none;
+}
 
 .Lists {
   display: flex;
