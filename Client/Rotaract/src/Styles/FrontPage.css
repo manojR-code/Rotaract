@@ -100,7 +100,7 @@ body {
 
 .innerInfo h1 {
   font-size: 4em;
-  font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .HamburgerMenu {
@@ -169,12 +169,12 @@ body {
 
 @media (max-width: 550px) {
   .HeadLine h1 {
-    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
+    font-family: 'Inter', 'TT-interphase-regular', sans-serif;
     font-size: 4em;
   }
 
   .innerInfo h1 {
     font-size: 2.8em;
-    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
+    font-family: 'Inter', 'TT-interphase-regular', sans-serif;
   }
 }

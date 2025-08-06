@@ -30,7 +30,7 @@
   border-bottom: 3px solid #c51f5d;
   padding-bottom: 5px;
   width: fit-content;
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 form {
@@ -78,7 +78,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   margin-top: 20px;
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 button:hover {

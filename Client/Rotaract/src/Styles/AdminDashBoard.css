@@ -8,14 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Optional local font (TT Interphase) - fallback if available locally
-@font-face {
-  font-family: 'TT-interphase-regular';
-  src: url('/Fonts/TT-Interphase-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-*/
 
 * {
   box-sizing: border-box;
@@ -65,7 +57,7 @@
   margin: 0;
   font-size: 1.2rem;
   color: var(--primary);
-  font-family: 'Bangers', cursive; /* Headings styled like Gagalin */
+  font-family: 'Inter'; /* Headings styled like Gagalin */
 }
 
 .event-info p {
@@ -119,7 +111,7 @@
   text-align: center;
   color: var(--primary);
   margin-bottom: 30px;
-  font-family: 'Bangers', cursive; /* Heading in Bangers */
+  font-family: 'Inter'; /* Heading in Bangers */
 }
 
 .admin-bar {

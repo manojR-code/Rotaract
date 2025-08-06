@@ -30,7 +30,7 @@
 .btn h3 {
   padding: 10px 10px;
   font-size: 1.2em;
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
   position: relative;
   display: inline-block;
   background-color: #2c1e4a;
@@ -45,7 +45,7 @@
 .temp > h2 {
   font-size: 2em;
   text-indent: 20px;
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
   color: #2c1e4a;
   position: relative;
 }
@@ -66,7 +66,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 8px 16px rgba(203, 52, 103, 0.3);
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .explore-btn:hover {

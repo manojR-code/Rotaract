@@ -24,7 +24,7 @@
   position: relative;
   display: inline-block;
   margin-bottom: 10px;
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family:  'TT-interphase-regular', sans-serif,'Inter';
 }
 
 .main-title::after {
@@ -42,7 +42,7 @@
   font-size: 2em;
   color: #4a3762;
   margin-top: 30px;
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .success-container {
@@ -195,7 +195,7 @@
   color: #1c1433;
   position: relative;
   display: inline-block;
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .school-activity-info .section-title::after {

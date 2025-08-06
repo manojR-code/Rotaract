@@ -34,7 +34,7 @@
 
 .Mission h1 {
     position: relative;
-    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
+    font-family:  'TT-interphase-regular', sans-serif;
 }
 
 p {
@@ -55,7 +55,7 @@ p {
 .Goals h1 {
     position: relative;
     font-weight: 900;
-    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
+    font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .Goals h1::after {
@@ -105,7 +105,7 @@ p {
 
 .box .ImageInfo1 h2 {
     font-size: 1.5em;
-    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
+    font-family:  'TT-interphase-regular', sans-serif;
 }
 
 .box .ImageInfo1 {
