@@ -19,7 +19,7 @@
   position: relative;
   display: inline-block;
   margin-bottom: 10px;
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .container .title h1::after {
@@ -79,7 +79,7 @@
   font-size: 1.3em;
   margin-bottom: 8px;
   color: #2c1e4a;
-  font-family: 'Bangers', 'TT-interphase-regular', sans-serif;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .UpcommingEvents .blocks .event-details p {
