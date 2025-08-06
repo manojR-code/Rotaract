@@ -3,20 +3,29 @@
   --glass: rgba(255, 255, 255, 0.3);
   --bg: #e3f2fd;
 }
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Optional local font (TT Interphase) - fallback if available locally
 @font-face {
   font-family: 'TT-interphase-regular';
   src: url('/Fonts/TT-Interphase-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+*/
 
 * {
   box-sizing: border-box;
   transition: 0.3s ease;
 }
-#LoadingLogo{
-  animation: rotate 4s linear  infinite;
+
+#LoadingLogo {
+  animation: rotate 4s linear infinite;
 }
+
 .event-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -49,12 +58,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: 'Inter', sans-serif; /* Use Inter for event details */
 }
 
 .event-info h3 {
   margin: 0;
   font-size: 1.2rem;
   color: var(--primary);
+  font-family: 'Bangers', cursive; /* Headings styled like Gagalin */
 }
 
 .event-info p {
@@ -74,6 +85,7 @@
   font-size: 0.9rem;
   align-self: flex-end;
   transition: background 0.2s ease;
+  font-family: 'Inter', sans-serif;
 }
 
 .remove-btn:hover {
@@ -91,8 +103,9 @@
   justify-content: center;
   z-index: 9999;
 }
+
 .admin-container {
-    font-family: 'TT-interphase-regular';
+  font-family: 'Inter', sans-serif;
   max-width: 1100px;
   margin: 40px auto;
   padding: 30px;
@@ -106,6 +119,7 @@
   text-align: center;
   color: var(--primary);
   margin-bottom: 30px;
+  font-family: 'Bangers', cursive; /* Heading in Bangers */
 }
 
 .admin-bar {
@@ -123,6 +137,7 @@
   border: 1px solid #ccc;
   font-size: 16px;
   outline: none;
+  font-family: 'Inter', sans-serif;
 }
 
 .delete-btn {
@@ -133,6 +148,7 @@
   border-radius: 12px;
   cursor: pointer;
   font-weight: 600;
+  font-family: 'Inter', sans-serif;
 }
 
 .delete-btn:hover {
@@ -145,11 +161,13 @@
   border-radius: 20px;
   margin-bottom: 40px;
   backdrop-filter: blur(8px);
+  font-family: 'Inter', sans-serif;
 }
 
 .create-form h2 {
   margin-top: 0;
   color: var(--primary);
+  font-family: 'Bangers', cursive;
 }
 
 .create-form input {
@@ -160,6 +178,7 @@
   border-radius: 12px;
   border: 1px solid #ccc;
   font-size: 16px;
+  font-family: 'Inter', sans-serif;
 }
 
 .create-btn {
@@ -170,6 +189,7 @@
   border-radius: 12px;
   font-weight: 600;
   cursor: pointer;
+  font-family: 'Inter', sans-serif;
 }
 
 .create-btn:hover {
@@ -199,6 +219,7 @@
   text-align: center;
   backdrop-filter: blur(10px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', sans-serif;
 }
 
 .user-card:hover {
@@ -223,12 +244,14 @@
   margin: 0;
   font-size: 18px;
   color: #0b4c79;
+  font-family: 'Bangers', cursive;
 }
 
 .user-info p {
   margin: 4px 0;
   font-size: 14px;
   color: #444;
+  font-family: 'Inter', sans-serif;
 }
 
 .card-actions {
@@ -248,6 +271,7 @@
     grid-template-columns: 1fr;
   }
 }
+
 @keyframes rotate {
   0%   { transform: translate(-50%, -50%) rotate(0deg); }
   100% { transform: translate(-50%, -50%) rotate(360deg); }

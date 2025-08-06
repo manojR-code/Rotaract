@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 @font-face {
   font-family: 'TT-interphase-pro';
-  src: url('Fonts/TT\ Interphases\ Pro\ Trial\ Bold.ttf');
+  src: url('Fonts/TT Interphases Pro Trial Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -10,15 +13,15 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'gaglin';
-  src: url('Fonts/Gagalin-Regular.otf') format('truetype');
+  src: url('Fonts/Gagalin-Regular.otf') format('opentype');
 }
 
 html,
 body {
   overflow-x: hidden;
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .Head {
@@ -28,7 +31,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: 'TT-interphase-pro';
+  font-family: 'Inter', 'TT-interphase-pro', sans-serif;
 }
 
 .InnerSideSection {
@@ -39,7 +42,8 @@ body {
 .Lists ul li {
   list-style: none;
 }
-#Links{
+
+#Links {
   list-style: none;
   text-decoration: none;
 }
@@ -47,7 +51,6 @@ body {
 .Lists {
   display: flex;
   align-items: center;
-
 }
 
 .Lists ul {
@@ -59,10 +62,11 @@ body {
 .Lists ul li {
   font-size: large;
   margin: 0 20px;
+  font-family: 'Inter', sans-serif;
 }
 
 .LogoSide h2 {
-  font-family: 'TT-interphase-regular';
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
   font-weight: 200;
 }
 
@@ -73,14 +77,14 @@ body {
   flex-direction: column;
 }
 
-.HeadLine>h4 {
+.HeadLine > h4 {
   font-size: 1.4em;
   color: #2c1e4a;
-  font-family: 'gaglin','TT-interphase-regular';
+  font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
 }
 
 .HeadLine h1 {
-  font-family: 'gaglin','TT-interphase-regular';
+  font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
   font-size: 6em;
   color: #2c1e4a;
 }
@@ -91,15 +95,14 @@ body {
 
 .innerInfo {
   color: white;
-  font-family: 'TT-interphase-regular';
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .innerInfo h1 {
   font-size: 4em;
+  font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
 }
 
-/*HamBurger*/
-/* Hamburger icon */
 .HamburgerMenu {
   display: none;
   flex-direction: column;
@@ -117,7 +120,6 @@ body {
   transition: 0.3s;
 }
 
-/* Navigation list */
 .Lists {
   display: flex;
   align-items: center;
@@ -137,7 +139,6 @@ body {
   cursor: pointer;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .HamburgerMenu {
     display: flex;
@@ -166,13 +167,14 @@ body {
   }
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   .HeadLine h1 {
-    font-family: 'gaglin';
+    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
     font-size: 4em;
   }
 
   .innerInfo h1 {
     font-size: 2.8em;
+    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
   }
 }

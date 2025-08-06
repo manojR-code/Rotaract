@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 @font-face {
   font-family: 'TT-interphase-regular';
   src: url('/Fonts/TT-Interphase-Regular.ttf') format('truetype');
@@ -11,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-family: 'TT-interphase-regular';
+  font-family: 'Inter', 'TT-interphase-regular', sans-serif;
   color: #2c1e4a;
   position: relative;
 }
@@ -26,6 +30,7 @@
   border-bottom: 3px solid #cb3467;
   display: inline-block;
   margin-bottom: 30px;
+  font-family: 'Bangers', cursive;
 }
 
 .contact-form {
@@ -36,6 +41,7 @@
 .contact-form label {
   margin-top: 15px;
   font-weight: 600;
+  font-family: 'Inter', sans-serif;
 }
 
 .contact-form input {
@@ -46,6 +52,7 @@
   font-size: 1em;
   color: #2c1e4a;
   outline: none;
+  font-family: 'Inter', sans-serif;
 }
 
 .contact-form button {
@@ -59,6 +66,7 @@
   cursor: pointer;
   align-self: flex-start;
   font-weight: bold;
+  font-family: 'Inter', sans-serif;
 }
 
 .contact-right {
@@ -72,6 +80,7 @@
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
 }
 
 .social-icons {
@@ -104,9 +113,9 @@
   transform: translateX(-50%);
   font-size: 0.9em;
   color: #2c1e4a;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;

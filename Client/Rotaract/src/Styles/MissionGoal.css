@@ -1,61 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 @font-face {
     font-family: 'TT-interphase-pro';
-    src: url('Fonts/TT\ Interphases\ Pro\ Trial\ Bold.ttf');
+    src: url('Fonts/TT Interphases Pro Trial Bold.ttf');
 }
 
 @font-face {
-  font-family: 'TT-interphase-regular';
-  src: url('/Fonts/TT-Interphase-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'TT-interphase-regular';
+    src: url('/Fonts/TT-Interphase-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
 
 @font-face {
     font-family: 'gaglin';
     src: url('Fonts/Gagalin-Regular.otf');
 }
+
 .Mission {
     width: 100%;
     margin-top: 20px;
     text-align: center;
-    font-family: 'TT-interphase-regular';
+    font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
-.Goals{
+
+.Goals {
     width: 100%;
     margin-top: 20px;
     text-align: center;
-    font-family: 'TT-interphase-regular';
+    font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
-.Mission h1{
+
+.Mission h1 {
     position: relative;
+    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
 }
-p{
-    font-family: 'TT-interphase-regular';
+
+p {
+    font-family: 'Inter', 'TT-interphase-regular', sans-serif;
     font-weight: 300;
 }
+
 .Mission h1::after {
     content: '';
     position: absolute;
-    transform: translate(-100%,-0%);
+    transform: translate(-100%, -0%);
     bottom: -10px;
     height: 3px;
     width: 265px;
     background-color: #cb3467;
 }
-.Goals h1{
+
+.Goals h1 {
     position: relative;
     font-weight: 900;
+    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
 }
+
 .Goals h1::after {
     content: '';
     position: absolute;
-    transform: translate(-100%,-0%);
+    transform: translate(-100%, -0%);
     bottom: -10px;
     height: 3px;
     width: 140px;
     background-color: #cb3467;
 }
+
 .blocks {
     width: 100%;
     display: flex;
@@ -70,9 +82,9 @@ p{
     min-height: 300px;
     background-color: white;
     border-radius: 10px;
-
 }
-.box .ImageBlock{
+
+.box .ImageBlock {
     width: 100%;
     height: 50%;
     display: flex;
@@ -80,23 +92,32 @@ p{
     justify-content: center;
     align-content: center;
 }
+
 .box .ImageInfo {
     margin-top: 10px;
     width: 100%;
+    font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
-.box .ImageInfo p{
+
+.box .ImageInfo p {
     font-size: medium;
 }
-.box .ImageInfo1 h2{
+
+.box .ImageInfo1 h2 {
     font-size: 1.5em;
+    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
 }
+
 .box .ImageInfo1 {
     margin-top: 30px;
 }
-.box .ImageInfo1 p{
+
+.box .ImageInfo1 p {
     margin-top: 50px;
     font-size: medium;
+    font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
-.ImageInfo p{
+
+.ImageInfo p {
     margin-top: 10px;
 }
