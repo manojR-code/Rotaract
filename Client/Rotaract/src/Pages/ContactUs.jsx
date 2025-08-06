@@ -3,7 +3,7 @@ import '../Styles/ContactUs.css';
 import { FaInstagram, FaYoutube, FaXTwitter } from 'react-icons/fa6';
 const ContactUs = () => {
   const HandleOnClick = () => {
-    window.location.href = '/https://www.youtube.com/@rotaryshantiniketan6477';
+    window.open('http://www.youtube.com/@rotaryshantiniketan6477');
   }
   const HandleInsta = () => {
     window.location.href = 'https://www.instagram.com/rac_shanthiniketan?igsh=dGs1aGpraHRhOXd2';
@@ -29,8 +29,8 @@ const ContactUs = () => {
       <div className="contact-right">
         <p>You Can Connect With Us on</p>
         <div className="social-icons">
-          <FaInstagram className="icon instagram" onClick={HandleOnClick}/>
-          <FaYoutube className="icon youtube" onClick={HandleInsta} />
+          <FaInstagram className="icon instagram" onClick={HandleInsta}/>
+          <FaYoutube className="icon youtube" onClick={HandleOnClick} />
         </div>
       </div>
 
