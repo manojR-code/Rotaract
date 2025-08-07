@@ -142,7 +142,9 @@ body {
 .Lists li {
   cursor: pointer;
 }
-
+.Lists li>#Links{
+  color:white;
+}
 @media (max-width: 768px) {
   .HamburgerMenu {
     display: flex;
