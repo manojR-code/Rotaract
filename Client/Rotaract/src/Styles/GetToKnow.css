@@ -13,7 +13,9 @@
   text-align: center;
   margin-top: 50px;
 }
-
+.containerimage{
+  font-size: 10px;
+}
 .Loading_container1 {
   position: fixed;
   top: 0;
