@@ -24,7 +24,7 @@ function FrontPage() {
 
         <div className={`Lists ${menuOpen ? 'show' : ''}`}>
           <ul>
-            <li><Link id='links' style={{textDecoration:'none',color:'black'}} to={'/MemberList'}>Members</Link></li>
+            <li><Link id='links' style={{textDecoration:'none',color:'white'}} to={'/MemberList'}>Members</Link></li>
             <li>Our Works</li>
           </ul>
         </div>
