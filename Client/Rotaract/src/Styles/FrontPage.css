@@ -142,7 +142,7 @@ body {
 .Lists li {
   cursor: pointer;
 }
-.Lists li>#Links{
+.Lists li>#Links a{
   color:white;
 }
 @media (max-width: 768px) {
