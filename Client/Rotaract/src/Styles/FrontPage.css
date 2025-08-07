@@ -64,8 +64,8 @@ body {
   font-size: large;
   margin: 0 20px;
   font-family: 'Inter', sans-serif;
-     background-color: hsl(338, 59%, 57%;
-  color:white
+   background-color: hsl(338, 59%, 57%);
+  color:white;
   padding: 15px 20px;
   border-radius: 15px;
 }
