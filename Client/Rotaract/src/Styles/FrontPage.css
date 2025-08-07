@@ -40,9 +40,6 @@ body {
 }
 
 .Lists ul li {
-   background-color: #c51f5d;
-  padding: 15px 20px;
-  border-radius: 15px;
   list-style: none;
 }
 
@@ -66,6 +63,9 @@ body {
   font-size: large;
   margin: 0 20px;
   font-family: 'Inter', sans-serif;
+     background-color: #c51f5d;
+  padding: 15px 20px;
+  border-radius: 15px;
 }
 
 .LogoSide h2 {
