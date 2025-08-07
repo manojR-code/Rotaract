@@ -6,8 +6,8 @@ import graduation from '../icons/graduation.png';
 import sustainable_travel from '../icons/sustainable-travel.png';
 
 const boxVariants = {
-  hidden: { opacity: 0, transform: 'translateX(-100px)' },
-  visible: { opacity: 1, transform: 'translateX(0)' },
+  hidden: { opacity: 0,  x:-100},
+  visible: { opacity: 1,x:0},
 };
 
 
