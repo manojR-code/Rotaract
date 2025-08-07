@@ -40,6 +40,9 @@ body {
 }
 
 .Lists ul li {
+   background-color: #c51f5d;
+  padding: 15px 20px;
+  border-radius: 15px;
   list-style: none;
 }
 
