@@ -15,13 +15,16 @@ function GetToKnow(props) {
     const fetcher = async () => {
       try {
         const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/user/Members`);
-        setUsers(res.data.Users || []);
+        const users = res.data.Users.filter((item) => {
+          return item.Priority == 'high';
+        });
+        setUsers(users || []);
         setLoad(true);
       } catch (err) {
         toast.error('Something Went Wrong');
       }
     }
-    fetcher();
+        fetcher();
   }, []);
   useEffect(() => {
     const fetcher = async () => {
