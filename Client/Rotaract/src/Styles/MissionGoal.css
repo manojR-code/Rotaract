@@ -34,7 +34,7 @@
 
 .Mission h1 {
     position: relative;
-    font-family:  'TT-interphase-regular', sans-serif;
+      font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 p {
@@ -105,7 +105,7 @@ p {
 
 .box .ImageInfo1 h2 {
     font-size: 1.5em;
-    font-family:  'TT-interphase-regular', sans-serif;
+      font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
 .box .ImageInfo1 {
