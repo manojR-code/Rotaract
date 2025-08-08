@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 @font-face {
   font-family: 'TT-interphase-pro';
@@ -85,11 +86,11 @@ body {
 .HeadLine > h4 {
   font-size: 1.4em;
   color: #2c1e4a;
-  font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
+  font-family: 'Russo One', sans-serif;
 }
 
 .HeadLine h1 {
-  font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
+  font-family: 'Russo One', sans-serif;
   font-size: 6em;
   color: #2c1e4a;
 }
@@ -175,7 +176,7 @@ body {
 
 @media (max-width: 550px) {
   .HeadLine h1 {
-    font-family: 'Bangers', 'gaglin', 'TT-interphase-regular', sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 4em;
   }
 
