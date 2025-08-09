@@ -15,7 +15,8 @@ function GetToKnow(props) {
     const fetcher = async () => {
       try {
         const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/user/HighPos`);
-        setUsers(res.data.data || []);
+        const sortedData = await (res.data.data || []).sort((a, b) => a.Sort - b.Sort);
+        setUsers(sortedData || []);
         setLoad(true);
       } catch (err) {
         toast.error('Something Went Wrong');
