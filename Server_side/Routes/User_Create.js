@@ -4,16 +4,27 @@ const multer = require('multer');
 const MemberList = require('../Models/UserListDB');
 const EventList = require('../Models/Event');
 const upload = multer({ storage: multer.memoryStorage() });
+const HighPos = require('../Models/HighPos');
 Router.post('/CreateUser', upload.single('image'), async (req, res) => {
     try {
-        const { Name, Role,priority } = req.body;
-        const Users = new MemberList({
-            Name,
-            Role,
-            Imgae_Upload: req.file.buffer,
-            Priority:priority
-        })
-        await Users.save();
+        const { Name, Role, priority } = req.body;
+        if (priority === "high") {
+            const data = new HighPos({
+                Name,
+                Role,
+                Imgae_Upload: req.file.buffer,
+                Priority: priority
+            });
+            await data.save();
+        } else {
+            const Users = new MemberList({
+                Name,
+                Role,
+                Imgae_Upload: req.file.buffer,
+                Priority: priority
+            });
+            await Users.save();
+        }
         return res.status(200).json({ message: 'Created Suuccessfully' });
     } catch (error) {
         return res.status(500).json({ message: 'Internal Server Error' });
@@ -86,5 +97,12 @@ Router.post('/RemoveEvent', async (req, res) => {
         return res.status(500).json({ message: 'Internal Server Error' });
     }
 });
-
+Router.get('/HighPos', async (req, res) => {
+    try {
+        const highpos = await HighPos.find({});
+        return res.status(200).json({ message: 'Success', data: highpos });
+    } catch (error) {
+        return res.status(500).json({ message: 'internal server error' });
+    }
+});
 module.exports = Router;

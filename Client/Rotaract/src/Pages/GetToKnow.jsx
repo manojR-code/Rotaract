@@ -14,11 +14,8 @@ function GetToKnow(props) {
   useEffect(() => {
     const fetcher = async () => {
       try {
-        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/user/Members`);
-        const users = res.data.Users.filter((item) => {
-          return item.Priority == 'high';
-        });
-        setUsers(users || []);
+        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/user/HighPos`);
+        setUsers(res.data.Users || []);
         setLoad(true);
       } catch (err) {
         toast.error('Something Went Wrong');
@@ -116,8 +113,8 @@ function GetToKnow(props) {
               />
             </div>
             <div className="info">
-              <h1>{user.Name}</h1>
-              <h2>{user.Role}</h2>
+              <h1>{`Rtr.${user.Name}`}</h1>
+              <h2>{`${user.Role} ${new Date().getFullYear()}-${new Date().getFullYear()+1}`}</h2>
             </div>
           </motion.div>
         ))}
