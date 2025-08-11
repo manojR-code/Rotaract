@@ -11,6 +11,7 @@ function GetToKnow() {
   const [users, setUsers] = useState([]);
   const [events, setEvents] = useState([]);
   const [eventload, setEventload] = useState(false);
+  const [singelimage, setsingleimage] = useState([]);
   useEffect(() => {
     const fetcher = async () => {
       try {
@@ -28,6 +29,10 @@ function GetToKnow() {
     const fetcher = async () => {
       try {
         const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/user/EventsInfo`);
+        // const res2 = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/Pomplates/SingleImage`);
+        // if (res2.data.SingleImage) {
+        //   setsingleimage(res2.data.SingleImage);
+        // }
         setEvents(res.data.Events);
         setEventload(true);
       } catch (err) {
@@ -131,18 +136,18 @@ function GetToKnow() {
 
         <div className="UpcommingEvents">
           {events.length > 0 ? (
-            events.map((event, index) => (
-              <div className="blocks" key={index}>
-                <img
-                  src={`data:image/jpeg;base64,${fun(event.Event_image.data)}`}
-                  alt={event.name}
-                />
-                <div className="event-details">
-                  <h2>{event.Event_Name}</h2>
-                  <p>{event.Event_Description}</p>
+              events.map((event, index) => (
+                <div className="blocks" key={index}>
+                  <img
+                    src={`data:image/jpeg;base64,${fun(event.Event_image.data)}`}
+                    alt={event.name}
+                  />
+                  <div className="event-details">
+                    <h2>{event.Event_Name}</h2>
+                    <p>{event.Event_Description}</p>
+                  </div>
                 </div>
-              </div>
-            ))
+              ))
           ) : (
             <p className="no-events">No upcoming events available</p>
           )}

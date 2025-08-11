@@ -10,12 +10,24 @@ const AdminDashboard = () => {
   const [search, setSearch] = useState('');
   const [form, setForm] = useState({ name: '', role: '', image: null,priority:'' });
   const [eventForm, setEventForm] = useState({ eventName: '', description: '', image: null });
+  const [singelimage,setsingleimage]=useState(null);
   const [change, setChange] = useState(false);
   const [load, setLoad] = useState(false);
   const [Event, setEvent] = useState([]);
   const [echange, esetChange] = useState(false);
   const [admin, setAdmin] = useState('Verify');
   const location = useLocation();
+  const HandleSingle = async(e) => {
+    e.preventDefault();
+    if (!singelimage) return alert('Please select an image');
+    const formData = new FormData();
+    formData.append('SingleImage', singelimage);
+    setLoad(true);
+    await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/user/EventsInfo`, formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    });
+    setLoad(false);
+  }
   useEffect(() => {
     setAdmin(location.state.admin);
   }, []);
@@ -209,7 +221,12 @@ const AdminDashboard = () => {
           {eventForm.image && <img src={URL.createObjectURL(eventForm.image)} className="preview" alt="event-preview" />}
           <button type="submit" className="create-btn">Upload Event</button>
         </form>
-
+        {/* <form className="create-form" onSubmit={HandleSingle}>
+          <h2>Upload Single Event Image</h2>
+          <input type="file" accept="image/*" onChange={(e) => setsingleimage(e.target.files[0])} />
+          {singelimage && <img src={URL.createObjectURL(singelimage)} className="preview" alt="event-preview" />}
+          <input type="submit"/>
+         </form> */}
         <div className="user-grid">
           {filteredUsers.map((user) => (
             <div className="user-card" key={user._id}>

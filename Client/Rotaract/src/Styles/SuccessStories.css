@@ -72,7 +72,7 @@
   margin-bottom: 12px;
   font-family: 'Inter', 'TT-interphase-regular', sans-serif;
   font-size: 1.2em;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .success-image {
@@ -136,13 +136,14 @@
 .blood-drive-info {
   flex: 1;
   min-width: 300px;
-  color: #2c1e4a;
 }
-
+.blood-drive-info h1{
+  color: #2c1e4a
+}
 .blood-drive-info h3 {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-weight: 500;
   font-family: 'Inter', 'TT-interphase-regular', sans-serif;
 }
 
@@ -190,10 +191,11 @@
 .school-activity-info {
   flex: 1;
   min-width: 300px;
-  color: #2c1e4a;
+
 }
 .school-activity-info h2{
   padding: 20px 0;
+    color: #2c1e4a;
 }
 .school-activity-info .section-title {
   font-weight: bold;
@@ -202,6 +204,7 @@
   position: relative;
   display: inline-block;
   font-family: 'Inter', 'TT-interphase-regular', sans-serif;
+  font-size: 2rem;
 }
 .section-title h2{
   font-size: 2.6rem;
@@ -222,6 +225,7 @@
   line-height: 1.6;
   font-weight: 500;
   font-family: 'Inter', 'TT-interphase-regular', sans-serif;
+  margin-top: 40px;
 }
 
 @media (max-width: 768px) {
@@ -275,6 +279,6 @@
     margin-bottom: 12px;
     font-family: 'Inter', 'TT-interphase-regular', sans-serif;
     font-size: 1em;
-    font-weight: 800;
+    font-weight: 500;
   }
 }

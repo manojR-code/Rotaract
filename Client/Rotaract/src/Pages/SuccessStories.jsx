@@ -5,6 +5,7 @@ import SavanaDurgaImage1 from '../Images/Savanadurga.jpeg'
 import NewsPaper from '../Images/NewsPaper.jpeg'
 import BloodDonationCamp from '../Images/Blood-Donation-Camp.png';
 import SchoolActivity from '../Images/Government-School-Engagement-Activity.png'
+import Donation from '../Images/Donation.png'
 const SuccessStories = () => {
     return (
         <div className="success-wrapper">
@@ -69,7 +70,7 @@ const SuccessStories = () => {
                     />
                 </div>
                 <div className="school-activity-info">
-                    <h2 className="section-title">Government School Activity</h2>
+                    <h1 className="section-title">Government School Activity</h1>
                     <h3>
                         Our Rotaract Club conducted engaging activities and provided essential
                         educational supplies in government schools, aiming to uplift young minds
@@ -78,6 +79,22 @@ const SuccessStories = () => {
                 </div>
             </div>
 
+            <div className="blood-drive-container">
+                <div className="blood-drive-info">
+                    <div className="BloodDonationCamp">
+                        <h1>Donation Drive</h1>
+                    </div>
+                    <h3>
+                        Our Rotaract Club is proud to host a donation drive to support those in need. We’re collecting essential items and contributions that will help bring hope, comfort, and change to our community. Every donation, big or small, makes a meaningful difference. Together, let’s turn compassion into action and create a brighter tomorrow.
+                    </h3>
+                </div>
+                <div className="blood-drive-image">
+                    <img
+                        src={Donation}
+                        alt="Blood Donation"
+                    />
+                </div>
+            </div>
 
         </div>
     );
