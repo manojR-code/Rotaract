@@ -7,7 +7,7 @@ const DB = require('./Config/DataBaseConnection');
 const Mail = require('./Routes/Mailer');
 const Pomplates = require('./Routes/SingleImage');
 app.use(cors({
-  origin: "https://rotaract-ten.vercel.app/",
+  origin: "https://rotaract-ten.vercel.app",
   methods: ['GET', 'POST']
 }));
 app.use(express.json());
