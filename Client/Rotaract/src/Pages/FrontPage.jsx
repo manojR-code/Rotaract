@@ -35,8 +35,6 @@ function FrontPage() {
         <h1>ROTARACT</h1>
         <h4>CLUB OF SHANTHINIKETAN</h4>
       </div>
-
-      {/* Video Background */}
       <div
         className="VideoPlayer"
         style={{ width: '100vw', height: '100vh', position: 'relative', overflow: 'hidden' }}

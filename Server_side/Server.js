@@ -11,7 +11,7 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use('/api/user', MemberList);
-app.use('/api/Mail',Mail);
+app.use('/api/Mails',Mail);
 app.listen(3000, (err,res) => {
     if (err) {
         return;

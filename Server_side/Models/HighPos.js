@@ -15,6 +15,9 @@ const HighPos = mongoose.Schema({
     Priority: {
         type: 'String',
         require
+    },
+    Sort: {
+        type: 'Number',
     }
 });
 module.exports = mongoose.model('HighPos', HighPos);

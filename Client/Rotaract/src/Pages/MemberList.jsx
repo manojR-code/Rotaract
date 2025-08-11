@@ -72,7 +72,7 @@ function MemberList() {
         width: '260px',
         height: '360px',
         backgroundColor: 'white',
-        borderRadius: '15px',
+        borderRadius: '10px',
         boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
         overflow: 'hidden',
         textAlign: 'center',
@@ -87,7 +87,6 @@ function MemberList() {
                 </div>
             )}
 
-            {/* OUR TEAM SECTION */}
             <div style={{ textAlign: 'center', marginTop: '50px' }}>
                 <h1 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#2c3e50' }}>Our Team</h1>
                 <div style={{
@@ -99,7 +98,6 @@ function MemberList() {
                 }}></div>
             </div>
 
-            {/* MEMBER LIST */}
             <div className="containerimage" style={containerImageStyle}>
                 {users && users.map((user, index) => (
                     <motion.div

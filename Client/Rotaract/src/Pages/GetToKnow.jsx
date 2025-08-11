@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import ImageLogo from '../Images/Rotaractlogo.png';
 import '../Styles/WhatsNew.css';
 
-function GetToKnow(props) {
+function GetToKnow() {
   const [load, setLoad] = useState(false);
   const [users, setUsers] = useState([]);
   const [events, setEvents] = useState([]);
@@ -15,7 +15,8 @@ function GetToKnow(props) {
     const fetcher = async () => {
       try {
         const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/user/HighPos`);
-        setUsers(res.data.Users || []);
+        const sortedData = await (res.data.data || []).sort((a, b) => a.Sort - b.Sort);
+        setUsers(sortedData || []);
         setLoad(true);
       } catch (err) {
         toast.error('Something Went Wrong');
