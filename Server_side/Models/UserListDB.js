@@ -14,7 +14,7 @@ const MemberList = mongoose.Schema({
     },
     Priority: {
         type: 'String',
-        require
+        required:true
     }
 });
 module.exports = mongoose.model('MemberList', MemberList);
