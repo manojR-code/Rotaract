@@ -32,7 +32,7 @@ Router.post('/CreateUser', upload.single('image'), async (req, res) => {
 });
 Router.get('/Members', async (req, res) => {
     try {
-        const users = await MemberList.find({});
+        const users = await MemberList.find({}), { Imgae_Upload: 0 });
         return res.status(200).json({ message: 'Users Fteched Success', Users: users });
     } catch (err) {
         return res.status(500).json({ message: 'Internal Server Error' });
