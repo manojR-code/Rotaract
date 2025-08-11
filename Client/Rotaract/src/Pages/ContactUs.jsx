@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/ContactUs.css';
 import { FaInstagram, FaYoutube, FaXTwitter } from 'react-icons/fa6';
+import { toast, ToastContainer } from 'react-toastify';
 import axios from 'axios';
 const ContactUs = () => {
   const HandleOnClick = () => {
@@ -14,6 +15,7 @@ const ContactUs = () => {
     const name = e.target[0].value;
     const email = e.target[1].value;
     const enquiry = e.target[2].value;
+    toast.success("Submitted");
     axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/Mails/Contact`, { fullName: name, email, enquiry })
     e.target.reset();
   }
