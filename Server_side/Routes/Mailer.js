@@ -30,7 +30,7 @@ Router.post('/Contact', (req, res) => {
     from:`${email}`,
     to:process.env.EMAIL,
     subject:`Contact Enquiry from ${fullName}`,
-    text:`${enquiry} You Can Call Me on +91${no}`
+    text:`${enquiry}`
     });
     SendMail.then(() => {
         res.status(200).json({ message: 'Email sent successfully' });
